@@ -1,0 +1,39 @@
+{
+  "name": "emmet-live",
+  "displayName": "Emmet Live",
+  "description": "Expand your Emmet abbreviations dynamically",
+  "version": "0.1",
+  "publisher": "ysemeniuk",
+  "engines": {
+    "vscode": "^1.5.0"
+  },
+  "categories": [
+    "Other"
+  ],
+  "activationEvents": [
+    "onCommand:ysemeniuk.emmetLive"
+  ],
+  "main": "./extension",
+  "contributes": {
+    "commands": [
+      {
+        "command": "ysemeniuk.emmetLive",
+        "title": "Emmet Live"
+      }
+    ]
+  },
+  "scripts": {
+    "postinstall": "node ./node_modules/vscode/bin/install",
+    "test": "node ./node_modules/vscode/bin/test"
+  },
+  "devDependencies": {
+    "vscode": "^1.0.0",
+    "mocha": "^2.3.3",
+    "eslint": "^3.6.0",
+    "@types/node": "^6.0.40",
+    "@types/mocha": "^2.2.32"
+  },
+  "dependencies": {
+    "emmet": "^1.6.3"
+  }
+}
