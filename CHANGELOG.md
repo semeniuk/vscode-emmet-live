@@ -1,4 +1,7 @@
 # Change Log
 
-## [0.1]
-- Initial release
+## [0.1.1]
+- pre-fill with current line content if there is no selected Emmet abbreviation
+
+## [0.1.0]
+- initial release

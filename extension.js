@@ -20,14 +20,23 @@ function activate(context) {
         }
                 
         var originalText = editor.document.getText(editor.selection);
-        // current line text: editor.document.lineAt(editor.selection.active.line).text
-        // todo: if selection is empty
-        // select current line
+
+        // if selection is empty then try to select current line
+        if (!originalText) {
+            var currentLineIndex = editor.selection.active.line;
+            var currentLine = editor.document.lineAt(currentLineIndex);
+            originalText = currentLine ? currentLine.text : originalText;
+
+            // select current line
+            var selectionFrom = new vscode.Position(currentLineIndex, 0);
+            var selectionTo = new vscode.Position(currentLineIndex, originalText.length);
+            editor.selections = [new vscode.Selection(selectionFrom, selectionTo)];
+        }
 
         vscode.window.showInputBox({
             placeHolder: "Emmet Abbreviation",
             prompt: "Type your abbreviation",
-            value: originalText,
+            value: originalText.trim(),
             validateInput: function (abbr) {
                 try {
                     var result = expand(abbr);
