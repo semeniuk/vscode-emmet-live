@@ -4,12 +4,17 @@
   "description": "Expand your Emmet abbreviations dynamically",
   "version": "0.1.0",
   "publisher": "ysemeniuk",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/semeniuk/vscode-emmet-live.git"
+  },
   "engines": {
     "vscode": "^1.5.0"
   },
   "categories": [
     "Other"
   ],
+  "icon": "img/logo.png",
   "activationEvents": [
     "onCommand:ysemeniuk.emmetLive"
   ],
