@@ -6,6 +6,4 @@ Expand your Emmet abbreviation dynamically while typing.
 
 Open the command palette (F1 on Windows) and look for the command 'Emmet Live'. Hit enter and input your Emmet abbreviation.
 
-\!\[Screenshot\]\(img/screenshot.png\)
-
 ![Screenshot](https://raw.githubusercontent.com/semeniuk/vscode-emmet-live/master/img/screenshot.png)
