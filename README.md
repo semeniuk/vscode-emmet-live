@@ -1,5 +1,7 @@
 # Emmet Live - Visual Studio Code Extension
 
+[Open in Visual Studio Marketplace](https://marketplace.visualstudio.com/items?itemName=ysemeniuk.emmet-live)
+
 ![Logo](https://raw.githubusercontent.com/semeniuk/vscode-emmet-live/master/img/logo.png)
 
 Expand your Emmet abbreviation dynamically while typing.

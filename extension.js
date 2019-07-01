@@ -35,13 +35,13 @@ function activate(context) {
 
         vscode.window.showInputBox({
             placeHolder: "Emmet Abbreviation",
-            prompt: "Type your abbreviation",
+            prompt: "Type your Emmet abbreviation",
             value: originalText.trim(),
             validateInput: function (abbr) {
                 try {
                     var result = expand(abbr);
                 } catch (e) {
-                    return "Invalid abbreviation";
+                    return "Invalid Emmet abbreviation";
                 }
                 editor.edit(function (editBuilder) {
                     editBuilder.replace(editor.selection, result);
