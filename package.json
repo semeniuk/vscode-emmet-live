@@ -2,7 +2,7 @@
   "name": "emmet-live",
   "displayName": "Emmet Live",
   "description": "Expand your Emmet abbreviations dynamically",
-  "version": "0.1.2",
+  "version": "1.0.0",
   "publisher": "ysemeniuk",
   "repository": {
     "type": "git",
@@ -47,6 +47,6 @@
     "@types/mocha": "^5.2.7"
   },
   "dependencies": {
-    "emmet": "^1.6.3"
+    "vscode-emmet-helper": "^1.2.16"
   }
 }
